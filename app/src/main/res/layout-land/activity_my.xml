@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+
+    tools:context=".MyActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="example.com.multipanefragment.MainPanelFragment"/>
+
+    <fragment
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/side_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        class="example.com.multipanefragment.SidePanelFragment"/>
+
+
+</RelativeLayout>
